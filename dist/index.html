@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://bootswatch.com/5/lux/bootstrap.min.css">
+    <title>Movie Search</title>    
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="">Movie/Series Search</a>
+          </div>
+        </div>
+      </nav>
+  
+      <div class="container">
+          <div class="jumbotron">
+              <h3 class="text-center">Search For Any Movie or Series</h3>
+              <form id="searchForm">
+                  <input type="text" class="form-control" id="searchText" placeholder="Search Movies or Series...">
+              </form>
+              <!-- need to add 'movieApp.' to our function to get the library from webpack config--> 
+              <button id="searchBtn" onclick="movieApp.searchMovie()">Search</button>
+          </div>
+      </div>  
+
+      <div class="container">
+        <div id="movies" class="row"></div>
+      </div>
+
+  <script src="bundle.js"></script>
+    
+</body>
+</html>
